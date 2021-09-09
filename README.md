@@ -43,7 +43,7 @@
 | 'basementsqft'                 |  Finished living area below or partially below ground level                                                            |           |       |
 | 'bathroomcnt'                  |  Number of bathrooms in home including fractional bathrooms                                                            |           |       |
 | 'bedroomcnt'                   |  Number of bedrooms in home                                                                                            |           |       |
-| 'buildingqualitytypeid'        |  Overall assessment of condition of the building from best (lowest) to worst (highest)                                 |           |
+| 'buildingqualitytypeid'        |  Overall assessment of condition of the building from best (lowest) to worst (highest)                                 |           |       |
 | 'buildingclasstypeid'          | The building framing type (steel frame, wood frame, concrete/brick)                                                    |           |       |
 | 'calculatedbathnbr'            |  Number of bathrooms in home including fractional bathroom                                                             |           |       |
 | 'decktypeid'                   | Type of deck (if any) present on parcel                                                                                |           |       |
@@ -55,12 +55,12 @@
 | 'finishedsquarefeet13'         | Perimeter  living area                                                                                                 |           |       |
 | 'finishedsquarefeet15'         | Total area                                                                                                             |           |       |
 | 'finishedsquarefeet50'         |  Size of the finished living area on the first (entry) floor of the home                                               |           |       |
-| 'fips'                         |  Federal Information Processing Standard code -  see https://en.wikipedia.org/wiki/FIPS\_county\_code for more details |
+| 'fips'                         |  Federal Information Processing Standard code -  see https://en.wikipedia.org/wiki/FIPS\_county\_code for more details |           |       |
 | 'fireplacecnt'                 |  Number of fireplaces in a home (if any)                                                                               |           |       |
 | 'fireplaceflag'                |  Is a fireplace present in this home                                                                                   |           |       |
-| 'fullbathcnt'                  |  Number of full bathrooms (sink, shower + bathtub, and toilet) present in home                                         |           |
+| 'fullbathcnt'                  |  Number of full bathrooms (sink, shower + bathtub, and toilet) present in home                                         |           |       |
 | 'garagecarcnt'                 |  Total number of garages on the lot including an attached garage                                                       |           |       |
-| 'garagetotalsqft'              |  Total number of square feet of all garages on lot including an attached garage                                        |           |
+| 'garagetotalsqft'              |  Total number of square feet of all garages on lot including an attached garage                                        |           |       |
 | 'hashottuborspa'               |  Does the home have a hot tub or spa                                                                                   |           |       |
 | 'heatingorsystemtypeid'        |  Type of home heating system                                                                                           |           |       |
 | 'latitude'                     |  Latitude of the middle of the parcel multiplied by 10e6                                                               |           |       |
@@ -76,16 +76,16 @@
 | 'propertycountylandusecode'    |  County land use code i.e. it's zoning at the county level                                                             |           |       |
 | 'propertylandusetypeid'        |  Type of land use the property is zoned for                                                                            |           |       |
 | 'propertyzoningdesc'           |  Description of the allowed land uses (zoning) for that property                                                       |           |       |
-| 'rawcensustractandblock'       |  Census tract and block ID combined - also contains blockgroup assignment by extension                                 |
-| 'censustractandblock'          |  Census tract and block ID combined - also contains blockgroup assignment by extension                                 |
+| 'rawcensustractandblock'       |  Census tract and block ID combined - also contains blockgroup assignment by extension                                 |           |       |
+| 'censustractandblock'          |  Census tract and block ID combined - also contains blockgroup assignment by extension                                 |           |       |
 | 'regionidcounty'               | County in which the property is located                                                                                |           |       |
 | 'regionidcity'                 |  City in which the property is located (if any)                                                                        |           |       |
 | 'regionidzip'                  |  Zip code in which the property is located                                                                             |           |       |
 | 'regionidneighborhood'         | Neighborhood in which the property is located                                                                          |           |       |
 | 'roomcnt'                      |  Total number of rooms in the principal residence                                                                      |           |       |
-| 'storytypeid'                  |  Type of floors in a multi-story house (i.e. basement and main level, split-level, attic, etc.).  See tab for details. |
+| 'storytypeid'                  |  Type of floors in a multi-story house (i.e. basement and main level, split-level, attic, etc.).  See tab for details. |           |       |
 | 'typeconstructiontypeid'       |  What type of construction material was used to construct the home                                                     |           |       |
-| 'unitcnt'                      |  Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...)                                    |           |
+| 'unitcnt'                      |  Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...)                                    |           |       |
 | 'yardbuildingsqft17'           | Patio in  yard                                                                                                         |           |       |
 | 'yardbuildingsqft26'           | Storage shed/building in yard                                                                                          |           |       |
 | 'yearbuilt'                    |  The Year the principal residence was built                                                                            |           |       |
