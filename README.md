@@ -105,7 +105,8 @@
 #### Initial, Informal Hypotheses
 > - Some categorical variables will be related to the target (I can test this with the Chi-Square Test)
 >> - Those that are related should be used in model, those that aren't, shouldn't be used
-> - 
+> - Some continuous variables will be related to the target (I can test this with a correlation test)
+>> - Those that are related should be used in model, those that aren't, shouldn't be used
 
 #### Formal Hypotheses
 
@@ -168,7 +169,7 @@ ___
 ##### Plan -> ***Acquire***
 > - Store functions that are needed to acquire data from the database on the Codeup data science database server; make sure the acquire.py module contains the necessary imports to run my code.
 > - The final function will return a pandas DataFrame.
-> - Import the acquire function from the acquire.py module and use it to acquire the data in the Final Report Notebook.
+> - Import the acquire function from the wrangle.py module and use it to acquire the data in the Final Report Notebook.
 > - Complete some initial data summarization (`.info()`, `.describe()`, `.value_counts()`, ...).
 ___
 
