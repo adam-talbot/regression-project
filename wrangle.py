@@ -96,7 +96,7 @@ def plot_boxplots(df):
     '''
     This function creates boxplots for each numerical column in the df
     '''
-    plt.figure(figsize=(30, 12))
+    plt.figure(figsize=(30, 8))
 
     # List of columns
     cols = df.select_dtypes('number').columns.tolist()
