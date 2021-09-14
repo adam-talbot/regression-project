@@ -86,7 +86,7 @@ def plot_distributions(df):
         plt.title(col)
         
         # Display histogram for column.
-        df[col].hist(edgecolor='black')
+        df[col].hist(edgecolor='black', color='green')
         
         # Hide gridlines.
         plt.grid(False)
@@ -113,7 +113,7 @@ def plot_boxplots(df):
         plt.title(col)
         
         # Display boxplot for column.
-        sns.boxplot(y=col, data=df)
+        sns.boxplot(y=col, data=df, color='green')
         plt.tight_layout()
 
 def split_zillow(df):
@@ -157,29 +157,6 @@ def wrangle_zillow_no_split():
         LB = Q1 - (1.5 * IQR)
         df = df[(df[col] < UB) & (df[col] > LB)]
     return df
-
-# def wrangle_zillow():
-#     '''
-#     This function aquires, prepares, and splits zillow data
-#     Returns train, validate, and test dfs
-#     '''
-#     df = get_zillow_sfr_data()
-#     df = df.dropna()
-#     df = df.drop_duplicates()
-#     df.fips = '0' + df.fips.astype('int').astype('string')
-#     df.bedroomcnt = df.bedroomcnt.astype('int')
-#     df.calculatedfinishedsquarefeet = df.calculatedfinishedsquarefeet.astype('int')
-#     df.yearbuilt = df.yearbuilt.astype('int')
-#     num_cols = df.select_dtypes('number').columns.tolist()
-#     for col in num_cols:
-#         Q1 = np.percentile(df[col], 25, interpolation='midpoint')
-#         Q3 = np.percentile(df[col], 75, interpolation='midpoint')
-#         IQR = Q3 - Q1
-#         UB = Q3 + (1.5 * IQR)
-#         LB = Q1 - (1.5 * IQR)
-#         df = df[(df[col] < UB) & (df[col] > LB)]
-#     train, validate, test = split_zillow(df)
-#     return train, validate, test
 
 def add_scaled_columns(train, validate, test, scaler, columns_to_scale):
     '''
