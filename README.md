@@ -52,8 +52,8 @@
 | `taxvaluedollarcnt` | The total tax assessed value of the parcel| float | Value being predicted |
 
 #### Initial, Informal Hypotheses
-> Number of bathrooms, location (county), and total square footage will be most related to appraised value
-> Average assessed value will vary by county
+> - Number of bathrooms, location (county), and total square footage will be most related to appraised value
+> - Average assessed value will vary by county
 
 #### Formal Hypotheses
 
@@ -105,7 +105,7 @@
 
 > **Conclusions:**
 > - Best predictors discovered were county, number of bedrooms, number of bathrooms, and square footage
-> - Best-peforming model outperformed baseline and increased $R^2$ value by 20%
+> - Best-peforming model outperformed baseline and increased R^2 value by 20%
 
 > **Next Steps:**
 > - Improve model performance by adding additional, more predictive features to the model
