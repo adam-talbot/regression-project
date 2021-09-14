@@ -52,37 +52,50 @@
 | `taxvaluedollarcnt` | The total tax assessed value of the parcel| float | Value being predicted |
 
 #### Initial, Informal Hypotheses
-> - Some categorical variables will be related to the target (I can test this with the Chi-Square Test)
->> - Those that are related should be used in model, those that aren't, shouldn't be used
-> - Some continuous variables will be related to the target (I can test this with a correlation test)
->> - Those that are related should be used in model, those that aren't, shouldn't be used
+> Number of bathrooms, location (county), and total square footage will be most related to appraised value
+> Average assessed value will vary by county
 
 #### Formal Hypotheses
 
->  **Hypotheses (Categorical Variables):**
+>  **Hypotheses (Correlation Tests):**
 > - alpha = .05
 
 > Null Hypotheses:
-> 1. H_0: 
+> 1. H_0: There is no linear relationship between appraised value and bedroom_cnt
+> 2. H_0: There is no linear relationship between appraised value and bathroom_cnt
+> 3. H_0: There is no linear relationship between appraised value and sqft
+> 4. H_0: There is no linear relationship between appraised value and year_built 
 
 > Alternative Hypotheses:
-> 1. H_a: 
+> 1. H_a: There is a linear relationship between appraised value and bedroom_cnt
+> 2. H_a: There is a linear relationship between appraised value and bathroom_cnt
+> 3. H_a: There is a linear relationship between appraised value and sqft
+> 4. H_a: There is a linear relationship between appraised value and year_built 
 
 > **Conclusions:**
-> 1. 
+> 1. We reject the null hypothesis since there is a evidence of a linear relationship between appraised_value and bedroom_cnt since p < alpha
+> 2. We reject the null hypothesis since there is a evidence of a linear relationship between appraised_value and bathroom_cnt since p < alpha
+> 3. We reject the null hypothesis since there is a evidence of a linear relationship between appraised_value and sqft since p < alpha
+> 4. We reject the null hypothesis since there is a evidence of a linear relationship between appraised_value and year_built since p < alpha
 
 
->  **Hypotheses (Quantitative Variables):** 
+> **Hypotheses (Mann-Whitney Tests):** 
 > - alpha = .05
 
 > Null Hypotheses:
-> 1. H_0: 
+> 1. H_0: there is no difference in appraised_value for houses in LA County and Orange County
+> 2. H_0: there is no difference in appraised_value for houses in LA County and Ventura County
+> 3. H_0: there is no difference in appraised_value for houses in Orange County and Ventura County 
 
 > Alternative Hypotheses:
-> 1. H_a: 
+> 1. H_a: there is a difference in appraised_value for houses in LA County and Orange County
+> 2. H_a: there is a difference in appraised_value for houses in LA County and Ventura County
+> 3. H_a: there is a difference in appraised_value for houses in Orange County and Ventura County
 
 > **Conclusions:**
-> 1. 
+> 1. We reject the null, there is evidence of a difference in appraised_value for houses in LA County and Orange County since p < 0.05
+> 1. We reject the null, there is evidence of a difference in appraised_value for houses in LA County and Ventura County since p < 0.05
+> 1. We reject the null, there is evidence of a difference in appraised_value for houses in Orange County and Ventura County since p < 0.05
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
@@ -91,10 +104,16 @@
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
 > **Conclusions:**
-> - 
+> - Best predictors discovered were county, number of bedrooms, number of bathrooms, and square footage
+> - Best-peforming model outperformed baseline and increased $R^2$ value by 20%
 
 > **Next Steps:**
-> - 
+> - Improve model performance by adding additional, more predictive features to the model
+>> - ZIP code
+>> - Neighborhood
+>> - Garage count
+>> - Pool info
+>> - Etc.
 
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
 
