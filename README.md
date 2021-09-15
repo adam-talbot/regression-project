@@ -184,6 +184,6 @@ ___
 
 You will need your own env file with database credentials along with all the necessary files listed below to run my final project notebook. 
 - [x] Read this README.md
-- [ ] Download the aquire.py, prepare.py, explore.py, and final_report.ipynb files into your working directory
+- [ ] Download the wrangle.py, evaluate.py, explore.py, and final_report.ipynb files into your working directory
 - [ ] Add your own env file to your directory. (user, password, host)
 - [ ] Run the final_report.ipynb notebook
